@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import Menu from "./components/Menu";
+import Navbar from "./components/Navbar"; 
 import './App.css';
 
 const Container = styled.div``;
 
 const Main = styled.div``;
+const Wrapper = styled.div``;
 
 function App() {
   return (
     <Container>
-      {/* menu */}
-    {/* main */}
+      <Menu />
+      <Main>
+        <Navbar />
+        <Wrapper />
+        video cards
+      </Main>
     </Container>
   );
 }
