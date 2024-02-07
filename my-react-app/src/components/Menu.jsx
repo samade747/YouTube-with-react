@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import youtube from "../img/logoimg.jpg"
 
 
 const Container = styled.div`
@@ -26,7 +27,7 @@ const Menu = () => {
     <Container>
     <Wrapper>
         <logo>
-            <Img src="">
+            <Img src="../img/logoimg.jpg">
             youtube
         </logo>
     </Wrapper>
