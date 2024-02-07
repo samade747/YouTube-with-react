@@ -3,9 +3,14 @@ import Menu from "./components/Menu";
 import Navbar from "./components/Navbar"; 
 import './App.css';
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
 
-const Main = styled.div``;
+`;
+
+const Main = styled.div`
+flex: 7;
+`;
 const Wrapper = styled.div``;
 
 function App() {
