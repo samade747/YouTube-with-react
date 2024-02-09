@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logoimg from "../img/logoimg.jpg"
+import HomeIcon from '@mui/icons-material/Home';
 
 
 const Container = styled.div`
@@ -17,7 +18,8 @@ const Wrapper = styled.div`
 const Logo = styled.div`
     display: flex;
     align-items: center;
-    gap: 5px;    
+    gap: 5px;
+    margin-bottom: 30px;    
 `;
 
 const Img = styled.img`
@@ -25,14 +27,25 @@ const Img = styled.img`
     height: 2px;
 `;
 
+const Item = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+`;
+
 const Menu = () => {
     return(
     <Container>
     <Wrapper>
         <Logo>
-            <img src={logoimg} width={80} alt="logo" />
-            
+            <img src={logoimg} width={80} alt="logo" />            
         </Logo>
+        <Item>
+            <HomeIcon />
+            Home
+        </Item>
     </Wrapper>
     </Container>
     
