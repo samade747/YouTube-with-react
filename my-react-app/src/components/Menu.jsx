@@ -55,7 +55,12 @@ const Hr = styled.div`
 `;
 
 const Login = styled.div``
-const Button = styled.button``
+const Button = styled.button`
+    padding: 5px 15px;
+    background-color: transpernt;
+    border: 1px solid #3ea6ff;
+    color: black;
+`;
 
 
 
