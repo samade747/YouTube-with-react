@@ -60,6 +60,7 @@ const Button = styled.button`
     background-color: transpernt;
     border: 1px solid #3ea6ff;
     color: black;
+    border-radius: 3px;
 `;
 
 
