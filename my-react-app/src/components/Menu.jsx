@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logoimg from "../img/logoimg.jpg"
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,12 +15,18 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import FlagIcon from '@mui/icons-material/Flag';
 import HelpIcon from '@mui/icons-material/Help';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+
 
 const Container = styled.div`
 flex:2;
-background-color: #202020;
+background-color: ${(theme) => theme.bg};
 height: 100%;
-color: white;
+color: ${(theme) => theme.text};
+font-size: 14px;
+position: sticky;
+top: 0;
 ` ;
 
 const Wrapper = styled.div`
@@ -51,7 +57,7 @@ padding: 11.5px 0px;
 
 const Hr = styled.div`
     margin: 15px 0px;
-    border: 0.5px solid #373737;
+    border: 0.5px solid ${(theme) => theme.soft};
 `;
 
 const Login = styled.div``
@@ -61,11 +67,16 @@ const Button = styled.button`
     border: 1px solid #3ea6ff;
     color: black;
     border-radius: 3px;
+    cursor: pointer
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 `;
 
 
 
-const Menu = () => {
+const Menu = ({darkMode, setDarkMode}) => {
     return(
     <Container>
     <Wrapper>
@@ -94,7 +105,8 @@ const Menu = () => {
         <Login>
         Sign in to like video, comments and subscribe.
         <Hr />
-        <Button>SIGN IN</Button>
+        
+        <Button><AccountCircleIcon /> SIGN IN</Button>
         <Hr />
         </Login>
 
@@ -116,7 +128,7 @@ const Menu = () => {
 
         <div><HelpIcon /> Help</div>
 
-        <div><LightModeIcon /> LightMode</div>
+        <div onClick={() => setDarkMode(!darkMode)}><LightModeIcon /> LightMode</div>
         
 
         </Item>
