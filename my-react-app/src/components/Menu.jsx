@@ -45,6 +45,13 @@ const Img = styled.img`
     height: 50px;
 `;
 
+const Title = styled.h2`
+font-size: 14px;
+font-weight: 500;
+color: #aaaaaa;
+
+`
+
 const Item = styled.div`
 display: flex;
 flex-direction: column;
@@ -109,7 +116,7 @@ const Menu = ({darkMode, setDarkMode}) => {
         <Button><AccountCircleIcon /> SIGN IN</Button>
         <Hr />
         </Login>
-
+        <Title>Youtube Best Videos</Title>
         <Hr />
 
         <div><LibraryMusicIcon /> Music</div>
