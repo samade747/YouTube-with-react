@@ -45,13 +45,6 @@ const Img = styled.img`
     height: 50px;
 `;
 
-const Title = styled.h2`
-font-size: 14px;
-font-weight: 500;
-color: #aaaaaa;
-
-`
-
 const Item = styled.div`
 display: flex;
 flex-direction: column;
@@ -59,7 +52,6 @@ align-items: flex-start;
 gap: 5px;
 cursor: pointer;
 padding: 11.5px 0px;
-
 `;
 
 const Hr = styled.div`
@@ -74,41 +66,41 @@ const Button = styled.button`
     border: 1px solid #3ea6ff;
     color: black;
     border-radius: 3px;
-    cursor: pointer
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 `;
 
+const Title = styled.h2`
+font-size: 14px;
+font-weight: 500;
+color: #aaaaaa;
+margin-bottom: 20px;
+`
 
 
-const Menu = ({darkMode, setDarkMode}) => {
+
+const Menu = ({ darkMode, setDarkMode }) => {
     return(
     <Container>
     <Wrapper>
         <Item>
         <Logo>
-       
-            <Img src={logoimg} width={80} alt="logo" />            
-       
+           <Img src={logoimg} width={80} alt="logo" />                
         </Logo>
         <div>
         <HomeIcon /> Home
         </div>
-
-        <div><ExploreIcon /> Explore</div>    
-            
+        <div><ExploreIcon /> Explore</div>                
         <div><SubscriptionsIcon /> Subscription</div>        
-
         <Hr />
-
-        <div><LibraryAddIcon /> Library</div>           
-        
+        <div><LibraryAddIcon /> Library</div>                   
         <div><HistoryIcon />History</div>
-
         <Hr />
-
         <Login>
         Sign in to like video, comments and subscribe.
         <Hr />
