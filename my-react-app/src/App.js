@@ -16,12 +16,11 @@ flex: 7;
 background-color: ${({ theme }) => theme.bg}
  
 `;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+`;
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
-
-
 
 
   return (
@@ -30,7 +29,7 @@ function App() {
     <Container>
       <Menu darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main>
-        <Navbar />        
+        <Navbar  />        
         <Wrapper />
         <Wrapper>
           <h1>test</h1>

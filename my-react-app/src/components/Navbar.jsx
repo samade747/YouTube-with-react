@@ -7,6 +7,8 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
+background-color: ${(theme) => theme.bg}
+
 `
 
 const Search = styled.div`
