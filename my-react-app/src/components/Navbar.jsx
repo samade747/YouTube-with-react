@@ -4,10 +4,20 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
 const Container = styled.div`
+    position: sticky;
+    top: 0;
+    background-color: ${(theme) => theme.bgLighter};
+    height: 56px;
+
 `
 
 const Wrapper = styled.div`
-background-color: ${(theme) => theme.bg}
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 20px;
+    justify-content: flex-end;
+
 
 `
 
