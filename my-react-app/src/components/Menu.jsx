@@ -27,6 +27,7 @@ color: ${(theme) => theme.text};
 font-size: 14px;
 position: sticky;
 top: 0;
+
 ` ;
 
 const Wrapper = styled.div`
@@ -110,7 +111,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         </Login>
         <Title>Youtube Best Videos</Title>
         <Hr />
-
+        
         <div><LibraryMusicIcon /> Music</div>
 
         <div><SportsTennisIcon /> Sports</div>

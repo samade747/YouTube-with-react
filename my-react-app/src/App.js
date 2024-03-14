@@ -5,6 +5,7 @@ import './App.css';
 import { darkTheme } from "./utils/Theme.js";
 import { LightTheme } from "./utils/Theme.js";
 import { useState } from "react";
+// import theme from "./utils/Theme";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ background-color: ${({ theme }) => theme.bg}
  
 `;
 const Wrapper = styled.div`
+
 `;
 
 function App() {
