@@ -6,6 +6,11 @@ import { darkTheme } from "./utils/Theme.js";
 import { LightTheme } from "./utils/Theme.js";
 import { useState } from "react";
 // import theme from "./utils/Theme";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -27,8 +32,8 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : LightTheme}>
-
     <Container>
+      <BrowserRouter>
       <Menu darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main>
         <Navbar  />        
@@ -55,10 +60,11 @@ function App() {
           <h1>test</h1>
           <h1>test</h1>
 
-
+        
         </Wrapper>
         
       </Main>
+      </BrowserRouter>
     </Container>
     </ThemeProvider>
   );
