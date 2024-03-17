@@ -11,6 +11,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Video from "./pages/Video.jsx";
 
 const Container = styled.div`
   display: flex;
@@ -37,32 +39,16 @@ function App() {
       <Menu darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main>
         <Navbar  />        
-        <Wrapper />
         <Wrapper>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-          <h1>test</h1>
-
-        
-        </Wrapper>
-        
+          <Routes>
+            <Route path="/" >
+                <Route index element={<Home />}/>
+                <Route path="video">
+                <Route path=":id" element={<Video />}/>
+                </Route>
+            </Route>
+          </Routes>
+        </Wrapper>        
       </Main>
       </BrowserRouter>
     </Container>
