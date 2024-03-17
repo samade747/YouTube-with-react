@@ -8,3 +8,5 @@
     // 3056
     )
  }
+
+ export default Video;
