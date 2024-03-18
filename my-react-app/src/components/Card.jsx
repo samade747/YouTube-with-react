@@ -1,32 +1,48 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
+
 const Container = styled.div`
   width: 360px;
   height: 150px;
   background-color: #f0f0f0;
-  margin: 10px;
+  margin-bottom: 80px;
   cursor: pointer;
   border-radius: 10px;
 `;
 
-const Image = styled.div`
+const Image = styled.img`
   width: 100%;
-  height: 150px;
-  background-color: #999;
-
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 `;
 
 const Details = styled.div`
+  display: flex; 
   width: 360px;
   margin-bottom: 45px;
   cursor: pointer;
-
 `
+const ChannelImage = styled.div`
+  width: 36px;
+  height: 36px;
+  background-color: #999;
+  border-radius: 50%;
+  
+`;
 
 const Card = () => {
     return (
-    <Container> <Image src="https://avatars.githubusercontent.com/u/132301326?s=400&u=afd980760171a13379860a2907729502743e5ed7&v=4"/> </Container>
+    <Container>
+      <Image src="../img/avatar.png" />       
+         <Details>
+              <ChannelImage /> 
+          </Details>       
+       </Container>
+    
+      
     // 37:08
     )
 }
