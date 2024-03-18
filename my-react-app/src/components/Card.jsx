@@ -29,16 +29,27 @@ const ChannelImage = styled.div`
   width: 36px;
   height: 36px;
   background-color: #999;
-  border-radius: 50%;
-  
+  border-radius: 50%;  
 `;
+
+
+const Texts = styled.div``;
+const Title = styled.h1``;
+const ChannelName = styled.h2``;
+const Info = styled.h2``;
+
 
 const Card = () => {
     return (
     <Container>
       <Image src="../img/avatar.png" />       
          <Details>
-              <ChannelImage /> 
+            <ChannelImage /> 
+            <Texts>
+              <Title>Test video</Title>
+              <ChannelName>Test channel</ChannelName>
+              <Info>65898,744 views • 3 days ago </Info>
+            </Texts>
           </Details>       
        </Container>
     
@@ -47,4 +58,4 @@ const Card = () => {
     )
 }
 
-export default Card
+export default Card 
