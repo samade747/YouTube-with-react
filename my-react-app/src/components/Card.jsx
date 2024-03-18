@@ -33,10 +33,25 @@ const ChannelImage = styled.div`
 `;
 
 
-const Texts = styled.div``;
-const Title = styled.h1``;
-const ChannelName = styled.h2``;
-const Info = styled.h2``;
+const Texts = styled.div`
+
+`;
+
+const Title = styled.h1`  
+    font-size: 16px; 
+    font-weight: 500;
+    color: ${( { theme } ) => theme.text};
+`;
+const ChannelName = styled.h2`
+font-size: 14px;
+color: ${( { theme } ) => theme.textSoft};
+margin: 10px 0px;
+`;
+
+
+const Info = styled.h2`
+
+`;
 
 
 const Card = () => {
