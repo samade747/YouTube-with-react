@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 
 
 const Container = styled.div`
@@ -50,27 +50,29 @@ margin: 10px 0px;
 
 
 const Info = styled.h2`
+  font-size: 14px;
+  color: ${( { theme } ) => theme.textSoft};
 
 `;
 
 
 const Card = () => {
     return (
+   <Link to="/video/test" style={{ textDecoration: "none"}}>
     <Container>
       <Image src="../img/avatar.png" />       
          <Details>
-            <ChannelImage /> 
+            <ChannelImage src="../img/avatar.png" /> 
             <Texts>
-              <Title>Test video</Title>
-              <ChannelName>Test channel</ChannelName>
+              <Title>Samad live Video</Title>
+              <ChannelName>samad Test channel</ChannelName>
               <Info>65898,744 views • 3 days ago </Info>
             </Texts>
           </Details>       
        </Container>
-    
-      
+   </Link>      
     // 37:08
-    )
-}
+    );
+};
 
 export default Card 

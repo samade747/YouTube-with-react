@@ -16,6 +16,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import HelpIcon from '@mui/icons-material/Help';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from "react-router-dom";
 
 
 
@@ -89,12 +90,15 @@ const Menu = ({ darkMode, setDarkMode }) => {
     return(
     <Container>
     <Wrapper>
-        <Item>
+    <Link to="/"  style={{ textDecoration: "none", color: "inherit"}}>        
         <Logo>
            <Img src={logoimg} width={80} alt="logo" />                
         </Logo>
-        <div>
-        <HomeIcon /> Home
+    </Link>
+        <Item>
+        <div>    
+        <HomeIcon />
+         Home
         </div>
         <div><ExploreIcon /> Explore</div>                
         <div><SubscriptionsIcon /> Subscription</div>        
@@ -104,8 +108,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         <Hr />
         <Login>
         Sign in to like video, comments and subscribe.
-        <Hr />
-        
+        <Hr />        
         <Button><AccountCircleIcon /> SIGN IN</Button>
         <Hr />
         </Login>
