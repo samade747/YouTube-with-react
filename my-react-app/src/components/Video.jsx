@@ -7,7 +7,10 @@ const Container = styled.div`
 
 `;
 
-const VideoWrapper = styled.div``;
+const VideoWrapper = styled.div`
+
+
+`;
 
 const Title = styled.h1`
 `
@@ -46,8 +49,8 @@ const Video = () => {
         <Details>
             <Info>65898,744 views • 3 days ago</Info>
             <Buttons>
-                <button></button>
-            </Buttons>
+                <button>Button</button>
+            </Buttons> 
         </Details>
 
         </Content>
