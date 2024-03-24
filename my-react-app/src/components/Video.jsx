@@ -25,8 +25,16 @@ const Recommendation = styled.div`
 
 const Details = styled.div``
 const Info = styled.div``
-const Buttons = styled.div``
-const Button = styled.div``
+const Buttons = styled.div`
+    display: flex;
+    gap: 20px;
+    color: ${({theme}) => theme.text}
+`
+const Button = styled.div`
+
+`
+
+
 
 
 // 4419
