@@ -13,6 +13,12 @@ const VideoWrapper = styled.div`
 `;
 
 const Title = styled.h1`
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: ${({theme}) => theme.text}
+
 `
 
 const Content = styled.div`
@@ -23,8 +29,16 @@ const Recommendation = styled.div`
     flex: 2;
 `;
 
-const Details = styled.div``
-const Info = styled.div``
+const Details = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+const Info = styled.div`
+    color: ${({theme}) => theme.textSoft}
+
+
+`
 const Buttons = styled.div`
     display: flex;
     gap: 20px;
@@ -53,19 +67,17 @@ const Video = () => {
                     allowFullScreen
                 </iframe>
             </VideoWrapper>           
-        <title>YouTube video player</title>
+        <title>Test Video</title>
         <Details>
             <Info>65898,744 views • 3 days ago</Info>
             <Buttons>
                 <button>Button</button>
+                <button>Button1</button>
             </Buttons> 
         </Details>
 
         </Content>
-
-
-
-        <Content>recommndation</Content>
+        <Recommmendation>recommndation</Recommmendation>
     </Container>;
 };
 
